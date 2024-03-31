@@ -1,0 +1,148 @@
+/***************************************************************************************************************************************
+ * This is the general styling used by all pages.
+ * It includes elements like the navbar, nav menu, earch, bar, footer etcetera
+ * 
+ * @author (Anyanwu Benedict Chukwuemeka)
+ * @version (v0.01)
+ *
+****************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-corner
+{
+    background-color: #000;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: #111111;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #444444;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: #545454;
+}
+
+::-webkit-scrollbar-thumb:active
+{
+    background-color: #777777;
+}
+
+::selection
+{
+    background: #000000;
+    color: #14d60d;
+}
+
+::placeholder
+{
+    user-select: none;
+    pointer-events: none;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+html:root
+{
+    --navBarHeight: 70px;
+    --navBarGenClr: #e7e7e7;
+    --navBarBcgSolid: #2f2e2e;
+    --navBarBcgTransparency: #2f2e2eef;
+    --navElementColor_green: #14d60d;
+    --navMenuPageActiveElementClr: #888888;
+    --navOptionColor: #a1a1a1;
+    --navBarDividerThickness: 2px;
+    --navMenuBcgClr: #1d1c1c;
+    --navBarIconBoxWidth: 25px;
+    --navBarIconWidth: 18px;
+    --navBarIconClr: #e7e7e7;
+    --navBarSearchWidth: 12px;
+    --navBarSearchClr: #888888;
+    --navBarProfileOptLinkClr: #cdcdcd;
+    --navFooterElemColor: #878787;
+    --navFooterElemHoverColor: #dfdfdf;
+    --navFooterCompClr: #616060;
+    --navBarNotificationPosT: calc(var(--navBarHeight) + 10px);
+    --navBarNotificationPosR: -100%;
+    --navBarNotificationTitleBoxHeight: 50px;
+    --switchAccHeaderHeight: 60px;
+    --switchAccOptImgBoxWidth: 50px;
+    --footerTextClrGreen: #14d60d;
+    --footerTxtClrBright: #e7e7e7;
+    --footerTxtClrMid: #b7b7b7;
+    --footerTxtClrDark: #888888;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Zen dots', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #000;
+    overflow: hidden;
+    /* scrollbar-color: #444444 #111111;
+    scrollbar-width: auto; */
+}
+
+body.bodystart
+{
+    overflow: visible;
+}
+
+body.bodystop
+{
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button
+{
+    outline: none;
+}
+
+img
+{
+    backface-visibility: hidden !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    pointer-events: none !important;
+}
+
+.give_space
+{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+}
